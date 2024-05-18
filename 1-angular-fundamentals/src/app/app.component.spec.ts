@@ -1,9 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import {HeaderComponent} from "./header/header.component";
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent]
+    declarations: [AppComponent, HeaderComponent]
   }));
 
   it('should create the app', () => {
@@ -15,7 +16,7 @@ describe('AppComponent', () => {
   it(`should have as title 'angular-ekart'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-ekart');
+    expect(app.title).toEqual('Ekart');
   });
 
   it('should render title', () => {
